@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name= "Facebook WebApplication">
+	<test name="Facebook WebApp">
+		<classes>
+			<class name="com.bridgelabz.fb.testcase.LoginPageTest"/>
+			<class name="com.bridgelabz.fb.testcase.HomePageTest"/>					
+		</classes>
+	</test>
+</suite>

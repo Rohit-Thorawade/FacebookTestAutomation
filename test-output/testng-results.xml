@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-25T13:11:00Z" name="Default suite" finished-at="2020-01-25T13:11:15Z" duration-ms="15023">
+    <groups>
+    </groups>
+    <test started-at="2020-01-25T13:11:00Z" name="Default test" finished-at="2020-01-25T13:11:15Z" duration-ms="15023">
+      <class name="com.bridgelabz.fb.testcase.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@1a84f40f]" started-at="2020-01-25T13:11:01Z" name="setup" finished-at="2020-01-25T13:11:04Z" duration-ms="3607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@1a84f40f]" started-at="2020-01-25T13:11:04Z" name="loginTest" data-provider="getTestData" finished-at="2020-01-25T13:11:15Z" duration-ms="10726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8.109555221E9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testdata@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.bridgelabz.fb.testcase.LoginPageTest@1a84f40f]" started-at="2020-01-25T13:11:15Z" name="teardown" finished-at="2020-01-25T13:11:15Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.bridgelabz.fb.testcase.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
