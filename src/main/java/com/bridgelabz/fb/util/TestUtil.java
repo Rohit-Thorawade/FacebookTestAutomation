@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 public class TestUtil {
 	static Xls_Reader reader;
-	public static long PAGE_LOAD_TIMEOUT=30;
-	public static long IMPLICIT_WAIT=25;
+	public static long PAGE_LOAD_TIMEOUT=50;
+	public static long IMPLICIT_WAIT=30;
 	
 	//Login Data
 	public static ArrayList<Object[]> getDataFromExcel()

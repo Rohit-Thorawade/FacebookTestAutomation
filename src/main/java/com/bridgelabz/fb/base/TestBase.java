@@ -43,15 +43,14 @@ public class TestBase {
 	}
 
 	public void intialization() {
-		String browsername = prop.getProperty("browser");		
+		String browsername = prop.getProperty("browser");
 		if (browsername.equalsIgnoreCase("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"/home/admin-1/eclipse-workspace/FacebookAutomation/driver/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver");
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");
 			driver = new ChromeDriver(option);
-			
+
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
