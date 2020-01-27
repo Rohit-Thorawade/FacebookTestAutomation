@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @Purpose LoginPage Class
+ *
+ */
 package com.bridgelabz.fb.pages;
 
 import org.openqa.selenium.WebElement;

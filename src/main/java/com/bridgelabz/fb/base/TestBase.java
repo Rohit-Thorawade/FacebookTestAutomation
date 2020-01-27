@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @Purpose Implementing base class to intialize browser
+ *
+ */
 package com.bridgelabz.fb.base;
 
 import java.io.FileInputStream;
