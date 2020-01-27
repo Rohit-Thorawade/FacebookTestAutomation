@@ -23,35 +23,36 @@ public class TestBase {
 	public static Properties prop;
 
 	public TestBase() {
-	
 
-			prop = new Properties();
-			FileInputStream ip = null;
-			try {
-				ip	= new FileInputStream(
-						"/home/admin-1/eclipse-workspace/FacebookAutomation/src/main/java/com/bridgelabz/fb/config/config.properties");
-			} catch (FileNotFoundException e) {
-				
-				e.printStackTrace();
-			}
-			try {
-				prop.load(ip);
-			} catch (IOException e) {
-				
-				e.printStackTrace();
-			}
+		prop = new Properties();
+		FileInputStream ip = null;
+		try {
+			ip = new FileInputStream(
+					"/home/admin-1/eclipse-workspace/FacebookAutomation/src/main/java/com/bridgelabz/fb/config/config.properties");
+		} catch (FileNotFoundException e) {
+
+			e.printStackTrace();
+		}
+		try {
+			prop.load(ip);
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
 
 	}
 
 	public void intialization() {
 		String browsername = prop.getProperty("browser");
 		if (browsername.equalsIgnoreCase("chrome")) {
+
 			System.setProperty("webdriver.chrome.driver",
 					"/home/admin-1/eclipse-workspace/FacebookAutomation/driver/chromedriver");
-	
-		ChromeOptions option =new ChromeOptions();
-		option.addArguments("--disable-notifications");
-		driver = new ChromeDriver(option);
+               
+
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("--disable-notifications");
+			driver = new ChromeDriver(option);
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -59,8 +60,6 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 
-	
-		
 	}
 
 }

@@ -32,7 +32,7 @@ public class HomePageTest extends TestBase {
 
 	}
 
-	// @AfterMethod
+	 @AfterMethod
 	public void teardown() {
 		driver.quit();
 	}
